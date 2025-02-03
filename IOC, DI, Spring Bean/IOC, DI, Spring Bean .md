@@ -24,27 +24,27 @@ interface I{
 }
 
 class A{
-		// 3. I 인터페이스 타입의 필드를 선언해준다.
-		private I i;
-		// 4. 생성자를 통해 외부에서 i의 인스턴스를 받아와 i를 초기화 해준다. (다형성)
-		public A(I i){
-			this.i = i;
-		}
-		// 5. 외부에서 받아온 인스턴스의 메서드를 호출한다.
-		public void exampleLogic(){
-			i.example();
-		}
+    // 3. I 인터페이스 타입의 필드를 선언해준다.
+    private I i;
+    // 4. 생성자를 통해 외부에서 i의 인스턴스를 받아와 i를 초기화 해준다. (다형성)
+    public A(I i){
+        this.i = i;
+    }
+    // 5. 외부에서 받아온 인스턴스의 메서드를 호출한다.
+    public void exampleLogic(){
+        i.example();
+    }
 }
 // 2. A가 사용하는 메서드를 가진 객체들이 I를 구현하도록 한다.
 class B implements I{
-		public void example(){
-		// logic
-		}
+    public void example(){
+        // logic
+    }
 }
 class C implements I{
-		public void example(){
-			// logic
-		}
+    public void example(){
+        // logic
+    }
 }
 ```
 
